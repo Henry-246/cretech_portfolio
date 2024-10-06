@@ -238,6 +238,7 @@ html {
     .vertical-nav {
         width: 200px;
         background-color: #222;
+        z-index: 2;
     }
     #section1 h1{
         font-size: 44px;
