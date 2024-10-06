@@ -37,6 +37,11 @@ body {
     bottom: 55%;
 }
 
+#section2 h1{
+    font-size: 32px;
+    text-align: center;
+}
+
 #section2 { background-color: #292929; }
 #section3 { background-color: #323232; }
 #section4 { background-color: #3b3b3b; }
@@ -217,6 +222,61 @@ html {
 .carousel-item.active {
     opacity: 1;
 }
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.about-title {
+    margin-bottom: 20px; /* Adds space below the title */
+}
+
+.about-profile {
+    margin-top: 20px; /* Optional: Adds extra space above the profile */
+}
+ 
+.skills{
+    margin-top: 10px;
+}
+
+.about-profile p {
+    max-width: 600px;
+    margin: 0 auto; /* Centering the paragraph */
+    text-align: center; /* Centering the text */
+}
+
+.skills-grid {
+    display: flex; /* Switch to flexbox for horizontal alignment */
+    justify-content: space-between; /* Spread items evenly */
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    gap: 20px; /* Adds spacing between items */
+}
+
+.skill-item {
+    flex: 1; /* Ensure each skill item takes up equal width */
+    max-width: 250px; /* Set a maximum width to avoid overflow */
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 15px;
+}
+
+.skill-item p {
+    color: #777;
+    margin-top: 10px;
+}
+
 
 @media (max-width: 768px) {
     /* Show menu button on small screens */
