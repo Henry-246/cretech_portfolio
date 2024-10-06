@@ -242,9 +242,9 @@ html {
         position: fixed;
     }
     #section1 h1{
-        font-size: 44px;
+        font-size: 48px;
         position: absolute;
-        bottom: 55%;
+        bottom: 480px;
     }
     .prev-btn, .next-btn {
         top: 30%;
