@@ -1875,7 +1875,7 @@ body {
 
 
 /* The Modal (hidden by default) */
-.modal {
+.modal-about {
     display: none;
     position: fixed;
     z-index: 2;
