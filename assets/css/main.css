@@ -1913,21 +1913,5 @@ body {
 }
 
 
-.career-btn {
-    background-color: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease;
-    border: 2px solid white;
-    padding: 0px 10px;
-}
 
-.career-btn:hover {
-    color: #1e90ff;
-    border: 2px solid #1e90ff;
-}
 
