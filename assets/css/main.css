@@ -1,14 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+
+/* Add this rule to prevent horizontal scroll */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Make sure everything is within the viewport */
+* {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     -webkit-font-smoothing: antialiased; /* Webkit-specific for smoother fonts */
     font-optical-sizing: auto;
     font-weight: 700;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width/height */
 }
+
+
+
+
+
+
+/* *{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    padding: 0;
+    box-sizing: border-box;
+} */
 
 .navbar{
     display: flex;
@@ -523,12 +546,16 @@ p {
 
 @media (max-width: 768px) {
     .carousel {
-        width: 90%; /* Full width of the container */
-    }
-    .card {
-        width: 100%; /* Full-width card on mobile screens */
+        width: 100%; /* Ensure it fits within the viewport */
+        margin: 0 auto;
+        padding: 10px; /* Add padding for some breathing room */
     }
 
+    /* Ensure full-width for mobile */
+    .card {
+        width: 100%; /* Full-width card on mobile screens */
+        margin: 0; /* Reset any margins */
+    }
     .portfolio-text hr{
         position: relative;
         top:0;
@@ -537,6 +564,7 @@ p {
         right: 25%;
     }
 }
+
 
 
 /* Background section */
