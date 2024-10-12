@@ -14,6 +14,10 @@
         <!-- jQuery and Slick JS -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     </head>
 <body>
     <header>
@@ -24,11 +28,11 @@
             </div>
             <div class="navitems">
                 <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Porfolio</li>
-                    <li>Contact Us</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
             <div class="menu-toggle" id="menu-toggle">
@@ -37,8 +41,8 @@
                 <span></span>
             </div>
         </nav>
-        <div class="hero">
-            <div class="hero-text">
+        <div class="hero" id="#home">
+            <div class="hero-text" data-aos="fade-up">
                 <p class="txt-edit">CRETECH DIGITALS</p> 
                 <br>
                 <h1>WE ARE <span class="span-edit">CREATIVE</span><br>DESIGN AGENCY</h1>
@@ -48,8 +52,8 @@
             </div>
         </div>
     </header>
-    <div class="services-section">
-        <div class="service-text">
+    <div class="services-section" id="services">
+        <div class="service-text" data-aos="fade-up">
             <p class="txt-edit">OUR SERVICES</p> 
             <br>
             <h1>WHAT WE <span class="span-edit">DO</span></h1>
@@ -57,7 +61,7 @@
             <hr class="solid">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum doloribus laboriosam commodi ipsa quo, inventore totam similique, sapiente explicabo sit et quas rerum quisquam dicta esse iste sequi. Corporis sunt fugiat in ipsam, tempore eius, doloremque iusto maxime aliquam nisi itaque, minima dolore sit beatae nihil a quo hic.</p>
         </div>
-        <div class="services">
+        <div class="services" data-aos="zoom-in">
             <div class="services-grid">
                 <div class="service-item">
                     <div class="service-icon">
@@ -91,11 +95,11 @@
             
         </div>
     </div>
-    <div class="about-us">
+    <div class="about-us" id="about">
         <div class="about-img">
             <img src="./assets/images/file.png" alt="Dj Girl">
         </div>
-        <div class="about-text">
+        <div class="about-text" data-aos="fade-up">
             <p class="txt-edit">ABOUT US</p> 
             <br>
             <h1 style="font-size: 48px; color: white">We Use <span class="span-edit">Creativity</span> to <br>Get Our Clients.</h1>
@@ -122,8 +126,8 @@
             </div>
         </div>
     </div>
-    <div class="portfolio">
-        <div class="portfolio-text">
+    <div class="portfolio" id="portfolio">
+        <div class="portfolio-text" data-aos="fade-up">
             <p class="txt-edit">PORTFOLIO</p> 
             <br>
             <h1>Latest <span class="span-edit">Works</span></h1>
@@ -164,7 +168,7 @@
             </a>
         </div> 
     </div>
-    <div class="contact-section">
+    <div class="contact-section" id="contact" >
         <div class="contact-container">
             <p>Contact Us</p>
             <h1>Get In <span>Touch.</span></h1>

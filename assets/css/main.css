@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Add this rule to prevent horizontal scroll */
 html, body {
     width: 100%;
@@ -57,7 +61,12 @@ html, body {
     margin-right: 20px;
 }
 
-.navitems ul li:hover{
+.navitems ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navitems ul li a:hover{
     color: #68ebe2;
     cursor: pointer;
 }
@@ -355,10 +364,10 @@ p {
 
 .about-img img{
     width: 476px; 
-    height: 492px;
+    height: 522px;
     position: relative;
     left: 30px;
-    top: 50px;
+    top: 68px;
     right: 0;
     bottom: 0;
 }
@@ -642,14 +651,18 @@ p {
 @media (max-width: 768px) {
     .contact-container {
         padding: 20px;
+        margin: 0px 20px;
+        
     }
 
     .contact-details {
         flex-direction: column;
+        
     }
 
     .contact-details div {
         justify-content: center;
+        align-items: center;
         text-align: center;
     }
 }

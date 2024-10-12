@@ -6,6 +6,13 @@ menuToggle.addEventListener('click', function() {
     navItems.classList.toggle('active');    // Toggles the 'active' class to show/hide the menu
 });
 
+AOS.init({
+  duration: 1000, // Animation duration in ms (default 400)
+  easing: 'ease-in-out', // Type of easing (default ease)
+  once: true, // Whether the animation should happen only once
+  mirror: false // Animate on scroll going back up
+});
+
 $(document).ready(function(){
     $('.carousel').slick({
       infinite: true,        // Looping
