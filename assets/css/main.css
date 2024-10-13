@@ -490,6 +490,7 @@ p {
     font-weight: 500;
     line-height: 2rem;
     padding-top: 25px;
+    width: 60%;
 }
 
 .carousel {
